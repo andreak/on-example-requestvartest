@@ -1,0 +1,18 @@
+Example testing request-var not being populated when executing assignment-callback from ajax-post
+
+fire up like this:
+
+mvn tomcat:run
+
+Point browser to http://localhost:8080/requestvartest/
+
+1. Enter some text in the text-input field
+2. Click the "submit" button
+
+The log-output (STDOUT) is:
+
+onblur: fiskVar: Full(fiskVar from render)
+submit assignment-callback: fiskVar: Empty
+
+Why is the second Empty?
+This file was modified by IntelliJ IDEA (Nika) IU-110.492 for binding GitHub repository
